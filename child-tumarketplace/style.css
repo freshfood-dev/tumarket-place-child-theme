@@ -1,0 +1,18 @@
+/* 
+Theme Name:		 child-tumarketplace
+Theme URI:		 http://childtheme-generator.com/
+Description:	 child-tumarketplace is a child theme of Twenty Nineteen, created by ChildTheme-Generator.com
+Author:			 Dileep
+Author URI:		 http://childtheme-generator.com/
+Template:		 twentynineteen
+Version:		 1.0.0
+Text Domain:	 child-tumarketplace
+*/
+
+
+/*
+    Add your custom styles here
+*/
+
+/*Load fonts*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600&display=swap');
