@@ -16,3 +16,21 @@ Text Domain:	 child-tumarketplace
 
 /*Load fonts*/
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600&display=swap');
+
+/*Typography*/
+body{font-size: 14px;line-height: 23px;}
+h1,h2,h3,h4,h5,h6{font-family : 'Raleway';font-weight : 500;font-style : normal;}
+h1{font-size : 36px;}
+h2{font-size : 30px;}
+h3{font-size : 28px;}
+h5{font-size : 26px;}
+h6{font-size : 24px;}
+body,p,i,em,span,a,div,section{font-family : 'Raleway';font-style : normal;}
+p,div,section{font-size: 14px;line-height: 23px;}
+i,span{font-size: 12px;line-height: 18px;}
+
+
+/*Footer*/
+footer .mini-footer{padding: 1rem 0;background: #181818;}
+footer .mini-footer a,footer .mini-footer a:active,footer .mini-footer a:visited{color: #fff;}
+footer .mini-footer a:hover{color: #ed7987;}
