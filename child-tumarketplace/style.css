@@ -30,7 +30,18 @@ p,div,section{font-size: 14px;line-height: 23px;}
 i,span{font-size: 12px;line-height: 18px;}
 
 
+
 /*Footer*/
-footer .mini-footer{padding: 1rem 0;background: #181818;}
-footer .mini-footer a,footer .mini-footer a:active,footer .mini-footer a:visited{color: #fff;}
-footer .mini-footer a:hover{color: #ed7987;}
+footer .footer__support__navigation{background: #eee none repeat scroll 0 0;padding: 1.5rem 0;}
+footer .footer__support__navigation .footer__support__navigation__caption{color: #7e7e7e;font-size: 14px;font-weight: 500;line-height: 20px;text-transform: uppercase;margin-bottom: 0;}
+footer .footer__support__navigation .footer__support__navigation__caption i{color: #898989;font-size: 30px;margin-right: 20px;position: relative;top: 8px;}
+footer .footer__support__navigation .footer__support__navigation__sub__caption{font-size: 13px;margin-left: 50px;}
+footer .footer__subscribe__area{background: #282828 none repeat scroll 0 0;padding: 4rem 0;}
+footer .footer__navigation{background: #181818 none repeat scroll 0 0;padding: 4rem 0;color: #fff;}
+footer .footer__navigation .footer__navigaton__title h5{font-size: 14px;color: #fff;text-transform: uppercase;border-bottom: 1px solid #303030;padding-bottom: 10px;}
+footer .footer__navigation .footer__navigation__content li{list-style: none;}
+footer .footer__navigation .footer__navigation__content{margin-left: 15px;margin-top: 15px;padding-left: 0;margin-bottom: 10px;}
+footer .footer__navigation .footer__navigation__content .footer__navigation__content__links{font-size: 14px;line-height: 35px;text-decoration: none;transition: all 0.3s ease 0s;}
+footer .copyright-area{background: #111 none repeat scroll 0 0;padding: 1rem 0;color: #fff;}
+footer .copyright-area a,footer .copyright-area a:active,footer .copyright-area a:visited,footer .footer__navigation .footer__navigation__content .footer__navigation__content__links,footer .footer__navigation .footer__navigation__content .footer__navigation__content__links:active,footer .footer__navigation .footer__navigation__content .footer__navigation__content__links:visited{color: #fff;}
+footer .copyright-area a:hover,footer .footer__navigation .footer__navigation__content .footer__navigation__content__links:hover{color: #ed7987;text-decoration: none;}
