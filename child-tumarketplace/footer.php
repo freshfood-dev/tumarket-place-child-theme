@@ -39,64 +39,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="footer__navigaton__title">
-                            <h5>My Account</h5>
-                        </div>
-                        <nav>
-                            <ul class="footer__navigation__content">
-                                <li><a href="my-account.html" class="footer__navigation__content__links">My Account</a>
-                                </li>
-                                <li><a href="#" class="footer__navigation__content__links">Order History</a></li>
-                                <li><a href="wishlist" class="footer__navigation__content__links">Wish List</a></li>
-                                <li><a href="#" class="footer__navigation__content__links">Search Terms</a></li>
-                                <li><a href="#" class="footer__navigation__content__links">Returns</a></li>
-                            </ul>
-                        </nav>
+                        <?php dynamic_sidebar( 'sidebar-5' ); ?>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="footer__navigaton__title">
-                            <h5>CUSTOMER SERVICE</h5>
-                        </div>
-                        <nav>
-                            <ul class="footer__navigation__content">
-                                <li><a href="my-account.html" class="footer__navigation__content__links">My Account</a>
-                                </li>
-                                <li><a href="#" class="footer__navigation__content__links">Order History</a></li>
-                                <li><a href="wishlist" class="footer__navigation__content__links">Wish List</a></li>
-                                <li><a href="#" class="footer__navigation__content__links">Search Terms</a></li>
-                                <li><a href="#" class="footer__navigation__content__links">Returns</a></li>
-                            </ul>
-                        </nav>
+                        <?php dynamic_sidebar( 'sidebar-2' ); ?>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="footer__navigaton__title">
-                            <h5>PAYMENT & SHIPPING</h5>
-                        </div>
-                        <nav>
-                            <ul class="footer__navigation__content">
-                                <li><a href="my-account.html" class="footer__navigation__content__links">My Account</a>
-                                </li>
-                                <li><a href="#" class="footer__navigation__content__links">Order History</a></li>
-                                <li><a href="wishlist" class="footer__navigation__content__links">Wish List</a></li>
-                                <li><a href="#" class="footer__navigation__content__links">Search Terms</a></li>
-                                <li><a href="#" class="footer__navigation__content__links">Returns</a></li>
-                            </ul>
-                        </nav>
+                        <?php dynamic_sidebar( 'sidebar-3' ); ?>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="footer__navigaton__title">
-                            <h5>PAYMENT & SHIPPING</h5>
-                        </div>
-                        <nav>
-                            <ul class="footer__navigation__content">
-                                <li><a href="my-account.html" class="footer__navigation__content__links">My Account</a>
-                                </li>
-                                <li><a href="#" class="footer__navigation__content__links">Order History</a></li>
-                                <li><a href="wishlist" class="footer__navigation__content__links">Wish List</a></li>
-                                <li><a href="#" class="footer__navigation__content__links">Search Terms</a></li>
-                                <li><a href="#" class="footer__navigation__content__links">Returns</a></li>
-                            </ul>
-                        </nav>
+                        <?php dynamic_sidebar( 'sidebar-4' ); ?>
                     </div>
                 </div>
             </div>
