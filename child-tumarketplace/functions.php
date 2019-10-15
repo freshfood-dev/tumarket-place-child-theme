@@ -1,4 +1,4 @@
-<?php 
+<?php
 	/*Load scripts and styles*/
 	add_action( 'wp_enqueue_scripts', 'child_tumarketplace_enqueue_styles' );
 	
@@ -87,5 +87,15 @@
 		));
 		
 	}
-	
+	/**Woocommerce Cart button */
+	add_filter('add_to_cart_custom_fragments', 'child_tumarketplace_woocommerce_header_add_to_cart_custom_fragment');
+	function child_tumarketplace_woocommerce_header_add_to_cart_custom_fragment( $cart_fragments ) {
+		global $woocommerce;
+		ob_start();
+		?>
+			<a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View   cart', 'woothemes'); ?>"><?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?> - <?php echo $woocommerce->cart->get_cart_total(); ?></a>
+		<?php
+		$cart_fragments['a.cart-contents'] = ob_get_clean();
+		return $cart_fragments;
+	}
  ?>
