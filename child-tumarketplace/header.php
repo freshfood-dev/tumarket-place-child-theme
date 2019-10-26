@@ -140,4 +140,9 @@
             </div>
         </header>
 
-        <div id="content" class="site-content">
+        <div id="content" class="container">
+            <?php 
+                if(!is_front_page() && !is_product_category() && !is_shop()) {
+            ?>
+                <div class="breadcrumb"><?php get_breadcrumb(); ?></div>
+            <?php }?>

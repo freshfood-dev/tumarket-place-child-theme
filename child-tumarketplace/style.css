@@ -143,6 +143,11 @@ header .header-middle .quick-access .search-by-category .search-container select
 .main-navigation .sub-menu{background: #fff;}
 /*body*/
 li{list-style: none;}
+.breadcrumb,.woocommerce-breadcrumb{margin:30px 0;padding: 8px 15px 8px 0;border-bottom: 1px solid #999;border-radius: 0;margin-left: 15px;background: transparent;}
+.breadcrumb > a{padding-right: 10px;color: #111;}
+.breadcrumb > a + a{padding-left: 10px;}
+.breadcrumb > a:hover,.breadcrumb > a:active,.breadcrumb > a:focus,.breadcrumb > a:visited{color: #111;}
+.breadcrumb > p{margin-bottom: 0;color:#e95668;padding-left: 10px;}
 /*Helpers*/
 .left-5 {margin-left: 5px;}
 .right-5{margin-right: 5px;}
@@ -181,7 +186,84 @@ footer .copyright-area a:hover,footer .footer__navigation .footer__navigation__c
         border-left: 0;
     }
 }
-
+.site-branding {margin: 0;}
+.entry .entry-header,.entry .entry-content, .entry .entry-summary,.entry .entry-footer,.hfeed .entry .entry-header,.woocommerce .content-area .site-main{
+    max-width: 100%;
+    margin: 0;
+}
+.entry .entry-content > *, .entry .entry-summary > *{max-width: 100%;}
+.entry .entry-content, .entry .entry-summary{padding: 0;}
+.entry .entry-header, .entry .entry-content, .entry .entry-summary, .entry .entry-footer{padding-left: 15px;}
+article {padding: 1rem 0 3rem;}
+[class*="post-thumbnail-"]{padding-left: 15px;padding-top: 10px;}
+#sidebar>ul:first-child{padding-left: 15px;}
+#sidebar .widget{
+    border-color: #eee;
+    border-style: solid;
+    border-width: 1px;
+    list-style: outside none none;
+}
+#sidebar .h1:not(.site-title):before, h2:before{content: none;}
+#sidebar .widget .widget-title{
+    background: #26acce none repeat scroll 0 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 45px;
+    margin: 0;
+    overflow: hidden;
+    padding: 5px 20px;
+    position: relative;
+    text-transform: uppercase;
+}
+#sidebar .widget .menu li a,#sidebar .widget ul li a{
+    color: #6d6d6d;
+    display: block;
+    font-family: "Raleway",sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 40px;
+    overflow: hidden;
+    padding: 5px 20px;
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+#sidebar .widget .menu li,#sidebar .widget ul li a{
+    border-bottom: 1px solid #eee;
+    margin: 0;
+}
+#sidebar .widget .menu li:last-child,#sidebar .widget ul li:last-child{
+    border-bottom: none;
+}
+#sidebar .widget .menu li a:hover,#sidebar .widget .menu li a:active,#sidebar .widget .menu li a:focus,#sidebar .widget .menu li a:visited{
+    color: #6d6d6d;
+}
+#sidebar .widget ul li a:hover,#sidebar .widget ul li a:active,#sidebar .widget ul li a:focus,#sidebar .widget ul li a:visited{
+    color: #6d6d6d;
+}
+.entry .entry-title:before{margin: 0rem 0 1rem;}
+.woocommerce .content-area{margin: 0;padding-left:0;}
+.woocommerce-products-header,.woocommerce-info{margin-left: 15px;}
+.archive .page-header, .search .page-header, .error404 .page-header{
+    display: none;
+}
+.post-list-items {border: 1px solid #e5e8ed;margin: 1rem 0;box-shadow: 0 2px 4px rgba(3,27,78,.05);border-radius: 5px;cursor: pointer;}
+.post-list-items:hover{transition: box-shadow .25s linear,-webkit-box-shadow .25s linear;box-shadow: 0 10px 20px rgba(3,27,78,.1);}
+.post-list-items .image-filters-enabled .entry .post-thumbnail:before, .image-filters-enabled .entry .post-thumbnail:after{position: relative;}
+.post-list-items .image-filters-enabled .entry .post-thumbnail:before{background: transparent;}
+.post-list-items [class*="post-thumbnail-"]{padding-top: 0;padding-left: 0;}
+.image-filters-enabled .entry .post-thumbnail .post-thumbnail-inner{filter: grayscale(0);}
+.post-list-items article{padding: 0;}
+.post-list-items .entry .post-thumbnail{margin: 0;}
+.post-list-items .post-thumbnail-inner img{height: 300px;object-fit: cover;}
+.post-list-items .entry-header,.post-list-items .entry-content,.post-list-items .entry-footer{padding: 0.8rem;}
+.post-list-items .entry .entry-content > *, .entry .entry-summary > *{margin: 0;}
+.post-list-items article img{height: 300px;object-fit: cover;width: 100%;}
+.entry .post-thumbnail{margin: 0;padding-left: 15px;}
+.comments-area{margin: 0;}
 @media only screen and (min-width: 768px){
     .site-branding {
         margin: 0;

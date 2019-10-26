@@ -19,14 +19,7 @@
  	*/
 	function child_tumarketplace_widgets_init() {
 	    if ( function_exists('register_sidebar') ) {
-		    $sidebar1 = array(
-		        'before_title' => '<h5 class="footer__navigaton__title">',
-		        'after_title' => '</h5>',
-		        'before_widget' => '<div id="%1$s" class="widget %2$s footer__navigation__content">',
-				'after_widget'  => '</div>',        
-		        'name'=>__( 'Footer Widget-1', 'textdomain' ),  
-			); 
-			$sidebar0 = array(
+		    $sidebar0 = array(
 		        'before_title' => '<h5 class="footer__navigaton__title">',
 		        'after_title' => '</h5>',
 		        'before_widget' => '<div id="%1$s" class="widget %2$s footer__navigation__content">',
@@ -54,8 +47,6 @@
 				'after_widget'  => '</div>',        
 		        'name'=>__( 'Footer Widget-4', 'textdomain' ),  
 		    );
-		     
-		    register_sidebar($sidebar1);
 		    register_sidebar($sidebar2);
 		    register_sidebar($sidebar3);
 			register_sidebar($sidebar4);
@@ -97,5 +88,28 @@
 		<?php
 		$cart_fragments['a.cart-contents'] = ob_get_clean();
 		return $cart_fragments;
+	}
+	/**
+	 * Generate breadcrumbs
+	 * 
+	 */
+	function get_breadcrumb() {
+		echo '<a href="'.home_url().'" rel="nofollow">Home</a>';
+		if (is_category() || is_single()) {
+			echo "/";
+			the_category(' &bull; ');
+				if (is_single()) {
+					echo " / ";
+					the_title('<p>','</p>');
+				}
+		} elseif (is_page()) {
+			echo "/";
+			echo the_title('<p>','</p>');
+		} elseif (is_search()) {
+			echo "/Search Results for... ";
+			echo '"<em>';
+			echo the_search_query();
+			echo '</em>"';
+		}
 	}
  ?>
